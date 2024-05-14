@@ -1,0 +1,9 @@
+{
+  "api_url": null,
+  "token": "???",
+  "username": null,
+  "friendlyname": null,
+  "model": "gpt-3.5-turbo",
+  "sysprompt":
+  "Your name is %GPTNAME%, user's name is %USERNAME%. Respond using Markdown"
+}
