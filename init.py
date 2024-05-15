@@ -14,7 +14,7 @@ from rich.markdown import Markdown
 with open('settings.json', 'r', encoding='utf-8') as f:
     settings = json.load(f)
 
-user = settings['username'] or os.getenv('USER')
+user = settings['username'] or os.getenv('USER') or os.getenv('USERNAME')
 modelname = settings['friendlyname'] or settings['model']
 model = settings['model']
 sysprompt = settings['sysprompt'].\
