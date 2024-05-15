@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 import sys
-from init import client, sysprompt, model, modelname, context
+from init import client, sysprompt, model, context
 
 try:
-    print(f'# --- Chat with {modelname} (Model: {model}) --- #')
     while True:
         message = input(f'>>> ').strip()
 

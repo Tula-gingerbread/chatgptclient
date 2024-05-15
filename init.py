@@ -23,5 +23,7 @@ client = OpenAI(api_key=settings['token'] or None, base_url=settings['api_url'] 
 
 # Not needed
 del settings
-
 context = collections.deque(list(), 10)
+
+# Here we go
+print(f'# --- Chat with {modelname} (Model: {model}) --- #')
