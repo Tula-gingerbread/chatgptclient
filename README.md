@@ -1,4 +1,4 @@
-# OpenAI Client
+# OpenAI-compatible client
 init.py is all non-cycle actions (load config, make client object) -- you will not run it directly
 
 main.py is program which use init.py and then asking you input, then requesting and printing ChatGPT answer
