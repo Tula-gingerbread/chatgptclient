@@ -8,7 +8,7 @@
 - `api_url`: the base API URL (if `null` - the standard API URL is used).
 - `token`: your API token.
 - `username`: how GPT will address you (if `null` - the PC username is used).
-- `friendlyname`: GPT's friendly name (if `null` - the ChatGPT model).
+- `friendlyname`: GPT's friendly name (if `null` - the GPT model).
 - `model`: the GPT model.
 - `sysprompt`: the GPT system prompt. `%GPTNAME%` - GPT's friendly name; `%USERNAME%` - the username.
 
