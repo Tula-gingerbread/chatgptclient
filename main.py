@@ -35,6 +35,7 @@ try:
         # Generate response
         completion = client.chat.completions.create(model=model, messages=messages)
         markdown_print(completion.choices[0].message.content)
+        print()    # Just add new line
 
         # Append new messages to context
         context.append({'role': 'user', 'content': prompt})
