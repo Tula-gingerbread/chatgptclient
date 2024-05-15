@@ -20,4 +20,4 @@ Enter `cc //sys` (`clear context //system`) to clear context.
 - `model`: the GPT model.
 - `sysprompt`: the GPT system prompt. `%GPTNAME%` - GPT's friendly name; `%USERNAME%` - the username.
 
-The code has been tested only on Linux/GNU, but probably will work on all systems.
+The code has been tested only on Linux/GNU Python 3.12.3, but probably will work on all systems and any python higher 3.8.
