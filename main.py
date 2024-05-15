@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import sys
-from init import client, sysprompt, model, context
+from init import client, sysprompt, model, context, markdown_print
 
 try:
     while True:
@@ -17,7 +17,7 @@ try:
 
         completion = client.chat.completions.create(model=model, messages=messages)
 
-        print(f'Answer: \n{completion.choices[0].message.content}')
+        markdown_print(completion.choices[0].message.content)
         context.append({'role': 'user', 'content': message})
         context.append({'role': 'assistant', 'content': completion.choices[0].message.content})
 

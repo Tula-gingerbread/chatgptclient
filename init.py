@@ -8,6 +8,8 @@ import json
 import os
 from openai import OpenAI
 import collections
+from rich.console import Console
+from rich.markdown import Markdown
 
 with open('settings.json', 'r', encoding='utf-8') as f:
     settings = json.load(f)
@@ -24,6 +26,11 @@ client = OpenAI(api_key=settings['token'] or None, base_url=settings['api_url'] 
 # Not needed
 del settings
 context = collections.deque(list(), 10)
+
+console = Console()
+
+def markdown_print(text: str) -> None:
+    console.print(Markdown(text, hyperlinks=False))   # Hyperlinks doesn't work in *K*onsole (KDE terminal), enable it if you want
 
 # Here we go
 print(f'# --- Chat with {modelname} (Model: {model}) --- #')
